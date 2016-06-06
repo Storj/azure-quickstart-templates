@@ -17,13 +17,13 @@
     "adminUserName": {
       "type": "string",
       "metadata": {
-        "description": "This is the the username you wish to assign to your VMs admin account"
+        "description": "This is the username you wish to assign to your VMs admin account"
       }
     },
     "adminPassword": {
       "type": "securestring",
       "metadata": {
-        "description": "This is the the password you wish to assign to your VMs admin account"
+        "description": "This is the password you wish to assign to your VMs admin account"
       }
     },
     "vmSize": {
@@ -188,7 +188,8 @@
       "properties": {
         "publisher": "Microsoft.OSTCExtensions",
         "type": "CustomScriptForLinux",
-        "typeHandlerVersion": "1.2",
+        "typeHandlerVersion": "1.5",
+        "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
             "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-dependency-between-scripts-using-extensions/mongo-configure-ubuntu.sh"
